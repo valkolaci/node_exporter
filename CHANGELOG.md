@@ -2,6 +2,17 @@
 
 ### **Breaking changes**
 
+### Changes
+
+* [BUGFIX]
+* [CHANGE]
+* [ENHANCEMENT]
+* [FEATURE]
+
+## 0.18.0 / 2019-05-09
+
+### **Breaking changes**
+
 * Renamed `interface` label to `device` in netclass collector for consistency with
   other network metrics #1224
 * The cpufreq metrics now separate the `cpufreq` and `scaling` data based on what the driver provides. #1248
@@ -13,12 +24,12 @@
 
 ### Changes
 
-* [BUGFIX]
-* [BUGFIX] Fix node_textfile_mtime_seconds to work properly on symlinks #1326
-* [CHANGE] Renamed `interface` label to `device` in netclass collector #1224
 * [BUGFIX] Add fallback for missing /proc/1/mounts #1172
+* [BUGFIX] Fix node_textfile_mtime_seconds to work properly on symlinks #1326
+* [CHANGE] Bonding state uses mii_status #1124
 * [CHANGE] Add TCPSynRetrans to netstat default filter #1143
 * [CHANGE] Add a limit to the number of in-flight requests #1166
+* [CHANGE] Renamed `interface` label to `device` in netclass collector #1224
 * [CHANGE] Add separate cpufreq and scaling metrics #1248
 * [CHANGE] Several systemd metrics have been turned off by default to improve performance #1254
 * [CHANGE] Expand systemd collector blacklist #1255
@@ -30,7 +41,6 @@
 * [FEATURE] Add kstat-based Solaris metrics for boottime, cpu and zfs collectors #1197
 * [FEATURE] Add uname collector for FreeBSD #1239
 * [FEATURE] Add diskstats collector for OpenBSD #1250
-* [CHANGE] Bonding state uses mii_status #1124
 * [FEATURE] Add pressure collector exposing pressure stall information for Linux #1174
 * [FEATURE] Add perf exporter for Linux #1274
 
