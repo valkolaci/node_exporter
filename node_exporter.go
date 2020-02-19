@@ -155,7 +155,7 @@ func main() {
 		).Default("40").Int()
 		configFile = kingpin.Flag(
 			"web.config",
-			"Path to config yaml file that can enable TLS or authentication.",
+			"[EXPERIMENTAL] Path to config yaml file that can enable TLS or authentication.",
 		).Default("").String()
 	)
 
